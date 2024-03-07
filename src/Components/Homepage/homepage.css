@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+#hero {
+  width: 100%;
+  height: calc(100% - 75px);
+  background-image: url("https://res.cloudinary.com/dvucqewfn/image/upload/v1709710001/header_tqusw4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .hero_content h1 {
+  font-size: 80px;
+}
+
+.hero .hero_content h1 span {
+  font-size: 80px;
+  position: relative;
+  z-index: 9;
+}
+.hero .hero_content h1 span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-color: #ffd205;
+  bottom: 20px;
+  z-index: -9;
+}
+.hero_img {
+  width: 80%;
+}
+.hero_img img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  animation: anim6 1s 0s alternate forwards infinite ease;
+}
+.hero_btn {
+  margin-top: 2rem;
+  display: flex;
+}
+.hero_btn a {
+  line-height: 26px;
+  border: 2px solid #fb5454;
+  border-radius: 5px;
+  padding: 15px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  background-color: #fb5454;
+  text-transform: capitalize;
+  opacity: 1;
+  margin-right: 1rem;
+  box-shadow: none !important;
+  transition: all 0.3s ease-in-out;
+}
+.hero_btn a:last-child {
+  background-color: transparent !important;
+  color: #222;
+}
+@keyframes anim6 {
+  0% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .hero .hero_content h1 {
+    font-size: 2.7rem;
+    margin-top: 1rem;
+  }
+
+  .hero .hero_content h1 span {
+    font-size: 2.7rem;
+    position: relative;
+    z-index: 9;
+  }
+  .hero .hero_content h1 span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #ffd205;
+    bottom: 20px;
+    z-index: -9;
+  }
+  .hero_img {
+    width: 100%;
+  }
+  .hero_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    margin-top: 75px;
+  }
+}

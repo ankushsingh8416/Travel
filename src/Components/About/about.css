@@ -1,0 +1,16 @@
+#about {
+  width: 100%;
+  height: calc(100% - 75px);
+  background-image: url("https://res.cloudinary.com/dvucqewfn/image/upload/v1709710001/header_tqusw4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 60px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  #about {
+    padding: 50px 0px;
+  }
+}
